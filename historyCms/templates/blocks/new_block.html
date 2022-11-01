@@ -1,0 +1,20 @@
+{% load static wagtailcore_tags%}
+{% load wagtailimages_tags %}
+{% load bootstrap4 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-9">
+            {{self.info|richtext}}
+          
+        </div>
+        <div class="col-sm-3">
+            {% image self.image width-250 %}
+        </div>
+</div>
+<br>
