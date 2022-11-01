@@ -60,7 +60,7 @@ MIDDLEWARE = [
     "wagtail.contrib.redirects.middleware.RedirectMiddleware",
 ]
 
-ROOT_URLCONF = "historyCms.urls"
+
 
 TEMPLATES = [
     {
