@@ -16,7 +16,10 @@ import os
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
 
-
+DEBUG = True
+ALLOWED_HOSTS = ["*"]
+ROOT_URLCONF = "historyCms.urls"
+SECRET_KEY = "django-insecure-0(%wg9!8s&+t3ew+)^n-w+*7fyyg=#+u#n9k-!_cs3ofvhf5l4"
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
